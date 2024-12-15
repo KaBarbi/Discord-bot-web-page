@@ -7,15 +7,16 @@
 
 /* Body */
 body {
-  font-family: "Poppins", sans-serif;
-  background-color: #2f3136;
-  color: #fff;
   display: flex;
-  justify-content: center;
+  flex-direction: column; /* Coloca os elementos em coluna */
   align-items: center;
+  justify-content: center;
   min-height: 100vh;
   margin: 0;
   padding: 10px;
+  font-family: "Poppins", sans-serif;
+  background-color: #2f3136;
+  color: #fff;
 }
 
 /* Card */
@@ -28,6 +29,7 @@ body {
   max-width: 900px;
   padding: 30px;
   gap: 30px;
+  margin-bottom: 20px; /* Adiciona um espaçamento entre o card e os comandos */
 }
 
 /* Imagem */
@@ -75,6 +77,47 @@ body {
 
 .custom-btn:hover {
   background-color: #4752c4;
+}
+
+.commands-container {
+  width: 100%; /* Garante que o container ocupe toda a largura disponível */
+  max-width: 900px; /* Limita a largura para acompanhar o card */
+  background-color: #202225;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.command {
+  display: flex;
+  align-items: center;
+  background-color: #2b2d31;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  padding: 10px;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.command-box {
+  background-color: #1e1f22;
+  border: 1px solid #40444b;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  color: #fff;
+  margin-right: 10px;
+  white-space: nowrap;
+}
+
+.member-tag {
+  background-color: #5865f2;
+  color: #fff;
+  padding: 2px 5px;
+  border-radius: 3px;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  margin-left: 5px;
 }
 
 /* Responsividade */
