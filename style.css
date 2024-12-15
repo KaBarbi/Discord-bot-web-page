@@ -120,6 +120,59 @@ body {
   margin-left: 5px;
 }
 
+/* Container de Contato */
+.contact-container {
+  width: 100%;
+  max-width: 900px;
+  background-color: #202225;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  margin-top: 20px;
+}
+
+.contact-title-left {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 10px;
+  text-align: left; /* Alinha o título à esquerda */
+}
+
+.contact-paragraph {
+  font-size: 1rem;
+  color: #b9bbbe;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.contact-info p {
+  font-size: 1rem;
+  color: #fff;
+  margin: 5px 0;
+}
+
+.contact-link {
+  color: #5865f2;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-link:hover {
+  color: #4752c4;
+}
+
+.contact-discord {
+  background-color: #2b2d31;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.95rem;
+  display: inline-block;
+}
+
+
 /* Responsividade */
 @media (max-width: 768px) {
   .card {
