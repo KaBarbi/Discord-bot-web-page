@@ -10,6 +10,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
   </head>
   <body>
     <div class="card">
@@ -20,30 +21,53 @@
 
       <!-- Texto -->
       <div class="card-content">
-        <h2 class="card-title">Gleice Discord Bot</h2>
-        <p class="card-description">
+        <h2
+          class="card-title"
+          data-pt="Gleice Discord Bot"
+          data-en="Gleice Discord Bot"
+        >
+          Gleice Discord Bot
+        </h2>
+        <p
+          class="card-description"
+          data-pt="Projeto pessoal criado para explorar e expandir meus conhecimentos em programação. Através dele, estou aprendendo a desenvolver e integrar diversas tecnologias."
+          data-en="Personal project created to explore and expand my programming knowledge. Through it, I am learning to develop and integrate various technologies."
+        >
           Projeto pessoal criado para explorar e expandir meus conhecimentos em
           programação. Através dele, estou aprendendo a desenvolver e integrar
           diversas tecnologias.
         </p>
-        <!-- Botão Invite -->
-        <a
-          href="https://discord.com/oauth2/authorize?client_id=1306407860493877258&permissions=8&integration_type=0&scope=bot"
-          class="custom-btn"
-          target="_blank"
-          >Adicionar</a
-        >
+        <!-- Contêiner para botões -->
+        <div class="button-container">
+          <!-- Botão Invite -->
+          <a
+            href="https://discord.com/oauth2/authorize?client_id=1306407860493877258&permissions=8&integration_type=0&scope=bot"
+            class="custom-btn"
+            target="_blank"
+            data-pt="Adicionar"
+            data-en="Add"
+            >Adicionar</a
+          >
+          <!-- Botão de troca de idioma -->
+          <div class="language-switcher">
+            <button onclick="changeLanguage()">
+              <img id="language-icon" src="images/brazil.png" alt="Bandeira do Brasil" />
+            </button>
+          </div>
+        </div>
       </div>
     </div>
+
     <!-- Comandos -->
     <div class="commands-container">
       <div class="command">
-        <div class="command-box">
-          !comandos
-        </div>
+        <div class="command-box">!comandos</div>
         <span
-          >- Apresenta uma lista com os comandos disponíveis do bot.</span
+          data-pt="- Apresenta uma lista com os comandos disponíveis do bot."
+          data-en="- Displays a list of the bot's available commands."
         >
+          - Apresenta uma lista com os comandos disponíveis do bot.
+        </span>
       </div>
 
       <div class="command">
@@ -51,46 +75,73 @@
           !sort <span class="member-tag">member</span>
         </div>
         <span
-          >- Realiza um sorteio entre os nomes fornecidos, separados por
-          espaço.</span
+          data-pt="- Realiza um sorteio entre os nomes fornecidos, separados por espaço."
+          data-en="- Performs a draw among the provided names, separated by spaces."
         >
+          - Realiza um sorteio entre os nomes fornecidos, separados por espaço.
+        </span>
       </div>
 
       <div class="command">
         <div class="command-box">!dado <span class="member-tag">X</span></div>
         <span
-          >- Role um dado de X faces (onde X é o número que você
-          escolher).</span
+          data-pt="- Role um dado de X faces (onde X é o número que você escolher)."
+          data-en="- Roll a dice with X sides (where X is the number you choose)."
         >
+          - Role um dado de X faces (onde X é o número que você escolher).
+        </span>
       </div>
 
       <div class="command">
         <div class="command-box">!purge <span class="member-tag">X</span></div>
         <span
-          >- Exclui as X mensagens mais recentes do canal. Utilize com
-          cautela!</span
+          data-pt="- Exclui as X mensagens mais recentes do canal. Utilize com cautela!"
+          data-en="- Deletes the X most recent messages from the channel. Use with caution!"
         >
+          - Exclui as X mensagens mais recentes do canal. Utilize com cautela!
+        </span>
       </div>
 
       <div class="command">
         <div class="command-box">
           !falar <span class="member-tag">texto</span>
         </div>
-        <span>- Faça o bot repetir exatamente o que você digitar.</span>
+        <span
+          data-pt="- Faça o bot repetir exatamente o que você digitar."
+          data-en="- Make the bot repeat exactly what you type."
+        >
+          - Faça o bot repetir exatamente o que você digitar.
+        </span>
       </div>
 
       <div class="command">
         <div class="command-box">
-          !somar <span class="member-tag">x</span> <span class="member-tag">y</span>
+          !somar <span class="member-tag">x</span>
+          <span class="member-tag">y</span>
         </div>
-        <span>- Faça o bot somar dois números e te mostrar o resultado.</span>
+        <span
+          data-pt="- Faça o bot somar dois números e te mostrar o resultado."
+          data-en="- Make the bot add two numbers and show you the result."
+        >
+          - Faça o bot somar dois números e te mostrar o resultado.
+        </span>
       </div>
     </div>
 
     <!-- Contato -->
     <div class="contact-container">
-      <h3 class="contact-title-left">Entre em Contato</h3>
-      <p class="contact-paragraph">
+      <h3
+        class="contact-title-left"
+        data-pt="Entre em Contato"
+        data-en="Contact Me"
+      >
+        Entre em Contato
+      </h3>
+      <p
+        class="contact-paragraph"
+        data-pt="Sinta-se à vontade para experimentar e me ajudar a aprimorar este projeto. Para dúvidas, sugestões ou reportar problemas, entre em contato através dos meios abaixo:"
+        data-en="Feel free to try and help me improve this project. For questions, suggestions, or reporting issues, contact me through the means below:"
+      >
         Sinta-se à vontade para experimentar e me ajudar a aprimorar este
         projeto. Para dúvidas, sugestões ou reportar problemas, entre em contato
         através dos meios abaixo:

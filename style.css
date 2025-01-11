@@ -71,12 +71,13 @@ body {
   padding: 10px 30px;
   border-radius: 12px;
   text-align: center;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.2s ease; 
   width: 150px;
 }
 
 .custom-btn:hover {
   background-color: #4752c4;
+  /* transform: scale(1.1);  */
 }
 
 .commands-container {
@@ -172,6 +173,57 @@ body {
   display: inline-block;
 }
 
+.button-container {
+  display: flex; /* Alinha os botões em linha */
+  align-items: center; /* Alinha os botões verticalmente */
+  gap: 15px; /* Espaçamento entre os botões */
+}
+
+.custom-btn, 
+.language-switcher button {
+  margin: 0; /* Garante que não há margens desnecessárias */
+}
+
+
+/* Botão de troca de idioma */
+.language-switcher {
+  display: inline-flex; 
+  align-items: center; 
+  justify-content: center; 
+}
+
+.language-switcher button {
+  background-color: #5865f2;
+  color: white; 
+  border: none; 
+  border-radius: 50%;
+  /* margin-left: 5px; */
+  width: 35px; 
+  height: 35px; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease; 
+}
+
+.language-switcher button:hover {
+  background-color: #4752c4;
+  transform: scale(1.1);
+}
+
+.language-switcher button:active {
+  transform: scale(0.95);
+}
+
+.language-switcher button img {
+  /* width: 80%;  */
+  height: 110%; 
+  object-fit: contain; 
+  border-radius: 50%; /* Garante que a imagem fique circular */
+}
+
+
 
 /* Responsividade */
 @media (max-width: 768px) {
@@ -204,4 +256,21 @@ body {
     padding: 12px 0;
     margin: 0 auto; /* Centraliza o botão */
   }
+
+  
+  .button-container {
+    display: flex; /* Mantém os botões em linha */
+    align-items: center; /* Alinha os botões verticalmente */
+    gap: 0; /* Remove o espaçamento padrão */
+    margin-left: 15%;
+  }
+
+  .language-switcher button {
+    margin-left: 5px; /* Ajusta o espaçamento entre os botões */
+  }
+
+  .custom-btn {
+    margin: 0; /* Garante que o botão "Adicionar" não tenha margens indesejadas */
+  }
+
 }
