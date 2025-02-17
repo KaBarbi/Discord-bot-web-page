@@ -1,19 +1,10 @@
 # Web Page for My Discord Bot
 
-## Overview
-This is the official web page for my Discord bot. The goal of this project is to develop my programming skills in a fun way.
-
-Access it at: https://discord-bot-page-ashen.vercel.app
-
-## Under Development
-This project is under constant development. New features will be added soon.
+This project has been improved and now the link is: https://discord-bot-page-beige.vercel.app
+And the current repository is: https://github.com/KaBarbi/gleice-web-page
 
 ---
 
-## Visão Geral
-Esta é a página web oficial do meu bot do Discord. O objetivo deste projeto é desenvolver meus conhecimentos em programação de forma divertida.
+Esse projeto foi melhorado e agora o link é: https://discord-bot-page-beige.vercel.app
 
-Acesse: https://discord-bot-page-ashen.vercel.app
-
-## Em Desenvolvimento
-Este projeto está em constante desenvolvimento. Novas funcionalidades serão adicionadas em breve.
+O repositorio atual é: https://github.com/KaBarbi/gleice-web-page
